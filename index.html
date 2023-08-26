@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Multi Step Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="central-wrapper column center">
+      <!-- STEPS -->
+      <div class="steps-wrapper">
+        <div class="steps center">
+          <div class="step">
+            <h3 class="step-number active">1</h3>
+            <div class="step-titles">
+              <h4>Step 1</h4>
+              <h5>Your info</h5>
+            </div>
+          </div>
+          <div class="step">
+            <h3 class="step-number">2</h3>
+            <div class="step-titles">
+              <h4>Step 2</h4>
+              <h5>Select plan</h5>
+            </div>
+          </div>
+          <div class="step">
+            <h3 class="step-number">3</h3>
+            <div class="step-titles">
+              <h4>Step 3</h4>
+              <h5>Add-ons</h5>
+            </div>
+          </div>
+          <div class="step">
+            <h3 class="step-number">4</h3>
+            <div class="step-titles">
+              <h4>Step 4</h4>
+              <h5>Summary</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN SECTION -->
+      <div class="main-section-wrapper">
+        <div class="main-section ms-padding center">
+          <h2>Personal Info</h2>
+          <h4>Please provide your name, email address, and phone number.</h4>
+          <div class="inner-section">
+            <form>
+              <div class="label-message">
+                <label for="input-name">Name</label>
+                <p id="name-error"></p>
+              </div>
+              <input id="input-name" type="text" placeholder="e.g. Stephen King" spellcheck="false">
+            </form>
+            <form>
+              <div class="label-message">
+                <label for="input-email">Email Adress</label>
+                <p id="email-error"></p>
+              </div>
+              <input id="input-email" type="email" placeholder="e.g. stephenking@lorem.com" spellcheck="false">
+            </form>
+            <form>
+              <div class="label-message">
+                <label for="input-phone">Phone Number</label>
+                <p id="phone-error"></p>
+              </div>
+              <input id="input-phone" type="text" placeholder="e.g. +387 66 133 250" spellcheck="false">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEXT-PREV -->
+    <div class="next-prev-wrapper">
+      <div class="next-prev column center">
+        <div class="prev hidden">
+          <button class="transition-02">Go Back</button>
+        </div>
+        <div class="next">
+          <button class="transition-02" id="go-to-page2">Next Step</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<script src="js/page_1.js"></script>
+</body>
+</html>

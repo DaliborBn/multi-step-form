@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <title>Multi Step Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="central-wrapper column center">
+      <!-- STEPS -->
+      <div class="steps-wrapper">
+        <div class="steps page4 center">
+          <div class="step">
+            <h3 class="step-number">1</h3>
+            <div class="step-titles">
+              <h4>Step 1</h4>
+              <h5>Your info</h5>
+            </div>
+          </div>
+          <div class="step">
+            <h3 class="step-number">2</h3>
+            <div class="step-titles">
+              <h4>Step 2</h4>
+              <h5>Select plan</h5>
+            </div>
+          </div>
+          <div class="step">
+            <h3 class="step-number">3</h3>
+            <div class="step-titles">
+              <h4>Step 3</h4>
+              <h5>Add-ons</h5>
+            </div>
+          </div>
+          <div class="step">
+            <h3 class="step-number active">4</h3>
+            <div class="step-titles">
+              <h4>Step 4</h4>
+              <h5>Summary</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN SECTION -->
+      <div class="main-section-wrapper page4">
+        <div class="main-section ms-padding center">
+          <h2>Finishing up</h2>
+          <h4>Double-check everything looks OK before confirming.</h4>
+          <div class="inner-section">
+            <div class="finish-wrapper">
+              <div class="plan-finish el-padding">
+                <h5 id="plan-title"><span></span></h5>
+                <h5 id="plan-price"></h5>
+              </div>
+              <hr id="separator">
+              <div class="add-finish-wrapper">
+              </div>
+            </div>
+            <div class="total-price-finish el-padding">
+              <h5 id="total-title">Total <span></span></h5>
+              <h5 id="total-price"></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEXT-PREV -->
+    <div class="next-prev-wrapper">
+      <div class="next-prev column center">
+        <div class="prev">
+          <button class="transition-02" id="go-to-page3">Go Back</button>
+        </div>
+        <div class="next page4">
+          <button class="transition-02" id="go-to-page5">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<script src="../js/page_4.js"></script>
+</body>
+</html>
