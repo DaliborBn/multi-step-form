@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <title>Multi Step Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="central-wrapper column center">
+      <!-- STEPS -->
+      <div class="steps-wrapper">
+        <div class="steps page3 center">
+          <div class="step">
+            <h3 class="step-number">1</h3>
+            <div class="step-titles">
+              <h4>Step 1</h4>
+              <h5>Your info</h5>
+            </div>
+          </div>
+          <div class="step">
+            <h3 class="step-number">2</h3>
+            <div class="step-titles">
+              <h4>Step 2</h4>
+              <h5>Select plan</h5>
+            </div>
+          </div>
+          <div class="step">
+            <h3 class="step-number active">3</h3>
+            <div class="step-titles">
+              <h4>Step 3</h4>
+              <h5>Add-ons</h5>
+            </div>
+          </div>
+          <div class="step">
+            <h3 class="step-number">4</h3>
+            <div class="step-titles">
+              <h4>Step 4</h4>
+              <h5>Summary</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN SECTION -->
+      <div class="main-section-wrapper page3">
+        <div class="main-section ms-padding center">
+          <h2>Pick add-ons</h2>
+          <h4>Add-ons help enhance your gaming experience.</h4>
+          <div class="inner-section">
+            <div class="add-wrapper">
+              <div class="add el-padding transition-02" id="online">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox">
+                  <div class="titles">
+                    <h5 class="add-title">Online service</h5>
+                    <h6 class="add-description">Mutiplayer games</h6>
+                  </div>
+                </div>
+                <div class="price">
+                  <h6 class="add-price">+$1/mo</h6>
+                </div>
+              </div>
+              <div class="add el-padding transition-02" id="larger">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox">
+                  <div class="titles">
+                    <h5 class="add-title">Larger storage</h5>
+                    <h6 class="add-description">Extra 1TB of cloud save</h6>
+                  </div>
+                </div>
+                <div class="price">
+                  <h6 class="add-price">+$2/mo</h6>
+                </div>
+              </div>
+              <div class="add el-padding transition-02" id="customizable">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox">
+                  <div class="titles">
+                    <h5 class="add-title">Customize profile</h5>
+                    <h6 class="add-description">Themes on your profile</h6>
+                  </div>
+                </div>
+                <div class="price">
+                  <h6 class="add-price">+$2/mo</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEXT-PREV -->
+    <div class="next-prev-wrapper">
+      <div class="next-prev column center">
+        <div class="prev">
+          <button class="transition-02" id="go-to-page2">Go Back</button>
+        </div>
+        <div class="next">
+          <button class="transition-02" id="go-to-page4">Next Step</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<script src="../js/page_3.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+@media (min-width:576px) {
+  .ms-padding {
+    padding: 4rem 3rem;
+  }
+  .el-padding {
+    padding: 1.5rem 1.5rem;
+  }
+  hr {
+    margin: 0 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  /* PAGE 1 */
+  .ms-padding {
+    padding: 7%;
+  }
+  .column {
+    width: 90vw;
+    max-width: none;
+   }
+  .central-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 75vh;
+    border-radius: 1vw;
+    overflow: hidden;
+  }
+  .steps-wrapper {
+    height: auto;
+    background: var(--white);
+    flex: 30%;
+    padding: 1.5% 0 1.5% 1.5%;
+  }
+  .step {
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+  }
+  .step-number {
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 1.5rem;
+  }
+  .steps {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 0;
+    background: url("../img/personal-info.jpg") no-repeat center center / cover;
+    position: relative;
+    border-radius: 1vw;
+    padding: 10%;
+    height: 100%;
+  }
+  .steps.page2 {
+    background: url("../img/select-plan.jpg") no-repeat center center / cover;
+  }
+  .steps.page3 {
+    background: url("../img/add-ons.jpg") no-repeat center center / cover;
+  }
+  .steps.page4 {
+    background: url("../img/summary.jpg") no-repeat center center / cover;
+  }
+  .steps.page5 {
+    background: url("../img/finish.jpg") no-repeat center center / cover;
+  }
+  .steps::before, .steps::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, black, 15%, transparent);
+    border-radius: 1vw;
+  }
+  .steps::after {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .steps * {
+    z-index: 10;
+  }
+  .step-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .step-titles h5 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--white);
+  }
+  .step-titles h4 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: wheat;
+  }
+  .main-section-wrapper {
+    flex: 70%;
+    display: flex;
+  }
+  .main-section {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    align-self: stretch;
+  }
+  .main-section h2 {
+    font-size: clamp(2.2rem, 2.3vw, 6rem);
+  }
+  .main-section h4 {
+    font-size: clamp(1.4rem, 1.2vw, 3rem);
+    margin-top: 1%;
+  }
+  .label-message label {
+    font-size: clamp(1.5rem, 1.4vw, 4rem);
+  }
+  .inner-section form {
+    margin-top: 3%;
+  }
+  .inner-section form input {
+    font-size: clamp(1.5rem, 1.3vw, 4rem);
+    padding: 2%;
+    border-radius: 0.5vw;
+    margin-top: 1%;
+  }
+  .label-message p {
+    font-size: clamp(1.1rem, 1vw, 3rem);
+  }
+  .next button, .prev button {
+    padding: 0.7vw;
+    font-size: clamp(1.5rem, 1.3vw, 4rem);
+  }
+
+  /* PAGE 2 */
+  .main-section-wrapper.page2 {
+    flex-direction: column;
+    background-color: var(--white);
+  }
+  .inner-section {
+    margin-top: 7%;
+  }
+  .plan-wrapper {
+    flex-direction: row;
+  }
+  .plan {
+    flex: 33%;
+    flex-direction: column;
+    border-radius: 0.5vw;
+  }
+  .plan .plan-info {
+    margin-top: 2rem;
+  }
+  .plan-info .plan-name {
+    font-size: clamp(1.6rem, 1.3vw, 3.5rem);
+  }
+  .plan-info .price {
+    font-size: clamp(1.6rem, 1.2vw, 3rem);
+    margin: 0.5vw 0;
+  }
+  .month-free {
+    font-size: clamp(1.4rem, 1vw, 2.8rem);
+  }
+  #advanced {
+    margin: 0 5%;
+  }
+  .toogle-wrapper {
+    margin: 0 7%;
+    background: url("../img/select-plan.jpg") no-repeat center center / cover;
+    border: none;
+    height: 15%;
+    border-radius: 0.5vw;
+    position: relative;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  }
+  .toogle-wrapper::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .toogle-wrapper h2 {
+    font-size: clamp(1.8rem, 1.4vw, 3rem);
+    margin: 0px auto;
+  }
+  .toogle {
+    width: 7vw;
+  }
+  .label {
+    width: 7vw;
+    height: 1.9vw;
+  }
+  .circle {
+    width: 1.5vw;
+    height: 1.5vw;
+    top: 0.2vw;
+    left: 0.2vw;
+  }
+  @keyframes toggleOn {
+    100% {
+      transform: translateX(5.1vw);
+    }
+  }
+  @keyframes toggleOff {
+    0% {
+      transform: translateX(5.1vw);
+    }
+  }
+
+  /* PAGE 3 */
+  .add {
+    border-radius: 0.5vw;
+  }
+  .checkbox-wrapper .titles {
+    margin: 0 1vw;
+  }
+  .checkbox-wrapper input {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .titles .add-title {
+    font-size: clamp(1.6rem, 1.3vw, 3rem);
+  }
+  .titles .add-description {
+    font-size: clamp(1.4rem, 1.2vw, 2.8rem);
+  }
+  .add-price {
+    font-size: clamp(1.5rem, 1.2vw, 3rem);
+  }
+  #larger {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+
+  /* PAGE 4 */
+  .plan-finish h5 {
+    font-size: clamp(1.4rem, 1.2vw, 3rem);
+  }
+  .add-finish h5 {
+    font-size: clamp(1.2rem, 1.1vw, 2.8rem);
+  }
+  .total-price-finish #total-title {
+    font-size: clamp(1.6rem, 1.3vw, 3rem);
+  }
+  .total-price-finish #total-price {
+    font-size: clamp(1.6rem, 1.4vw, 3rem);
+  }
+
+  /* PAGE 5 */
+  .thank-you img {
+    width: 15%;
+    max-width: none;
+  }
+  .thank-you h2 {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+}
+
+@media (min-width:992px) {
+  /* PAGE 1 */
+  .ms-padding {
+    padding: 7% 12%;
+  }
+  .el-padding {
+    padding: 4%;
+  }
+  .column {
+    width: 80vw;
+  }
+  .step-number {
+    width: 4.2rem;
+    height: 4.2rem;
+    font-size: 1.7rem;
+  }
+  .step-titles h5 {
+    font-size: 1.5rem;
+  }
+  .step-titles h4 {
+    font-size: 1.6rem;
+  }
+
+  /* PAGE 2 */
+  .toogle-wrapper {
+    margin: 0 12%;
+  }
+
+  /* PAGE 4 */
+  hr {
+    margin: 0 4%;
+  }
+  .add-finish:first-child {
+    padding-top: 4%;
+  }
+  .add-finish:last-child {
+    padding-bottom: 4%;
+  }
+}
+
+@media (min-width:1200px) {
+  /* PAGE 1*/
+  .column {
+    width: 67vw;
+  }
+  .inner-section form {
+    margin-top: 4%;
+  }
+}
+
+@media (min-width:1440px) {
+  /* PAGE 1 */
+  .steps-wrapper {
+    padding: 2% 0 2% 2%;
+  }
+  .step {
+    margin-bottom: 10%;
+  }
+  .step-number {
+    width: 3.3vw;
+    height: 3.3vw;
+    font-size: clamp(1.7rem, 1.4vw, 3.2rem);
+  }
+  .step-titles h5 {
+    font-size: clamp(1.5rem, 1.1vw, 2.8rem);
+  }
+  .step-titles h4 {
+    font-size: clamp(1.6rem, 1.2vw, 3rem);
+  }
+
+  /* PAGE 2 */
+  .plan img {
+    width: 40%;
+  }
+
+  /* PAGE 3 */
+  .checkbox-wrapper input {
+    width: 1.7vw;
+    height: 1.7vw;
+  }
+}
+
