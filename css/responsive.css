@@ -188,7 +188,7 @@
     background: rgba(0, 0, 0, 0.3);
   }
   .toogle-wrapper h2 {
-    font-size: clamp(1.8rem, 1.4vw, 3rem);
+    font-size: clamp(1.8rem, 1.5vw, 5rem);
     margin: 0px auto;
   }
   .toogle {
